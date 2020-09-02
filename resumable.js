@@ -116,7 +116,7 @@
       }
     };
     $.indexOf = function(array, obj) {
-    	if (array.indexOf) { return array.indexOf(obj); }     
+    	if (array.indexOf) { return array.indexOf(obj); }
     	for (var i = 0; i < array.length; i++) {
             if (array[i] === obj) { return i; }
         }
@@ -845,7 +845,7 @@
         var parameterNamespace = $.getOpt('parameterNamespace');
                 $h.each(query, function (k, v) {
                   params.push([encodeURIComponent(parameterNamespace + k), encodeURIComponent(v)].join('='));
-          п      });
+                });
                 if ($.getOpt('method') === 'octet') {
                     data = bytes;
                 } else {
